@@ -1,5 +1,7 @@
 # Revenue Distribution Chart
 
+Demo Link : [Streamify (assement-speedy-brand-ruwd.vercel.app)](https://assement-speedy-brand-ruwd.vercel.app/)
+
 ## Overview
 
 This application visualizes revenue distribution using a pie chart. The goal is to provide a clear and interactive representation of different revenue streams, such as subscriptions and ads.
