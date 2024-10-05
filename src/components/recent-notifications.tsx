@@ -1,6 +1,6 @@
 "use client";
 
-import { Bell, Music, User, Zap } from "lucide-react";
+import { Music, User, Zap } from "lucide-react";
 import {
   Card,
   CardContent,

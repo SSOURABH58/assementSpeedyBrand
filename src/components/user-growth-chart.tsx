@@ -1,5 +1,9 @@
-import { Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts"
-import { ChartContainer, ChartTooltip, ChartTooltipContent } from "@/components/ui/chart"
+import { Line, LineChart, ResponsiveContainer, XAxis, YAxis } from "recharts";
+import {
+  ChartContainer,
+  ChartTooltip,
+  ChartTooltipContent,
+} from "@/components/ui/chart";
 
 const data = [
   { month: "Jan", totalUsers: 1000000, activeUsers: 800000 },
@@ -14,7 +18,7 @@ const data = [
   { month: "Oct", totalUsers: 1450000, activeUsers: 1200000 },
   { month: "Nov", totalUsers: 1500000, activeUsers: 1250000 },
   { month: "Dec", totalUsers: 1550000, activeUsers: 1300000 },
-]
+];
 
 export function UserGrowthChart() {
   return (
@@ -36,10 +40,20 @@ export function UserGrowthChart() {
           <XAxis dataKey="month" />
           <YAxis />
           <ChartTooltip content={<ChartTooltipContent />} />
-          <Line type="monotone" dataKey="totalUsers" stroke="var(--color-totalUsers)" strokeWidth={2} />
-          <Line type="monotone" dataKey="activeUsers" stroke="var(--color-activeUsers)" strokeWidth={2} />
+          <Line
+            type="monotone"
+            dataKey="totalUsers"
+            stroke="var(--color-totalUsers)"
+            strokeWidth={2}
+          />
+          <Line
+            type="monotone"
+            dataKey="activeUsers"
+            stroke="var(--color-activeUsers)"
+            strokeWidth={2}
+          />
         </LineChart>
       </ResponsiveContainer>
     </ChartContainer>
-  )
+  );
 }
