@@ -1,50 +1,39 @@
-# React + TypeScript + Vite
+# Revenue Distribution Chart
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+This application visualizes revenue distribution using a pie chart. The goal is to provide a clear and interactive representation of different revenue streams, such as subscriptions and ads.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Thought Process
 
-## Expanding the ESLint configuration
+- **React with Vite**: The project is built using React and Vite for fast development and optimized builds.
+- **Tailwind CSS**: Utilized for theming and styling, allowing for a responsive and modern design with utility-first classes.
+- **Shadcn UI**: Integrated for UI components, ensuring a consistent and polished look throughout the application.
+- **Component-Based Layout**: The code is structured in a component-based manner, promoting code quality and enhancing the developer experience by making it easier to manage and reuse components.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## How to Run the Application
 
-- Configure the top-level `parserOptions` property like this:
+1. **Clone the Repository**:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+   ```bash
+   git clone <repository-url>
+   cd <repository-directory>
+   ```
+2. **Install Dependencies**:
+   Use Yarn to install the necessary packages:
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+   ```bash
+   yarn install
+   ```
+3. **Start the Application**:
+   Run the application using:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+   ```bash
+   yarn start
+   ```
+4. **Open in Browser**:
+   Navigate to `http://localhost:5173` in your web browser to view the application.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
